@@ -25,10 +25,7 @@ export function Form({ feedbackType }: Props) {
       format: 'jpg',
       quality: 0.8
     })
-      .then(uri => {
-        console.log(uri);
-        setScreenshot(uri);
-      })
+      .then(uri => setScreenshot(uri))
       .catch(error => console.log(error));
   }
 
